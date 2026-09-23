@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BloodConnect</title>
+    <link rel="stylesheet" href="{% static 'donor/style.css' %}">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        🩸 Blood<span>Connect</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/donors/">Find Donors</a>
+        <a href="/register/">Become a Donor</a>
+        <a href="/request/">Request Blood</a>
+    </div>
+
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="small-title">
+            ❤️ HELP SAVE A LIFE
+        </div>
+
+        <h1>
+            Every Drop<br>
+            Can Save a Life.
+        </h1>
+
+        <p>
+            Connect with blood donors and people in need.
+            Find the right blood group quickly and help make
+            a difference.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/donors/" class="btn btn-primary">
+                🔎 Find a Donor
+            </a>
+
+            <a href="/register/" class="btn btn-secondary">
+                🩸 Become a Donor
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="blood-drop">
+        🩸
+    </div>
+
+</section>
+
+
+<section class="stats">
+
+    <div class="stat-card">
+        <div class="icon">🩸</div>
+        <h2>8</h2>
+        <p>Blood Groups</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="icon">👥</div>
+        <h2>24/7</h2>
+        <p>Donor Access</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="icon">❤️</div>
+        <h2>1</h2>
+        <p>Goal: Save Lives</p>
+    </div>
+
+</section>
+
+
+<footer>
+    BloodConnect © 2026 | Connecting Donors With Those In Need
+</footer>
+
+</body>
+</html>

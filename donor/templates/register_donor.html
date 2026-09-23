@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Become a Donor</title>
+
+    <link rel="stylesheet"
+          href="{% static 'donor/style.css' %}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        🩸 Blood<span>Connect</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/donors/">Find Donors</a>
+        <a href="/register/">Become a Donor</a>
+        <a href="/request/">Request Blood</a>
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <h1>Become a Blood Donor</h1>
+
+    <p class="subtitle">
+        Register yourself and help someone in need.
+    </p>
+
+
+    <div class="form-card">
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            <div class="form-group">
+
+                <label>Your Name</label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Blood Group</label>
+
+                <select name="blood_group" required>
+
+                    <option value="">Select blood group</option>
+
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Phone Number</label>
+
+                <input
+                    type="text"
+                    name="phone"
+                    placeholder="Enter phone number"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>City</label>
+
+                <input
+                    type="text"
+                    name="city"
+                    placeholder="Enter your city"
+                    required>
+
+            </div>
+
+
+            <button class="submit-btn" type="submit">
+                Register as Donor
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<footer>
+    BloodConnect © 2026
+</footer>
+
+</body>
+
+</html>
